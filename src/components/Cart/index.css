@@ -1,0 +1,16 @@
+.cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    border: solid;
+    padding: 20px;
+}
+
+.cart-container{
+    height: fit-content;
+    width: 100vw;
+    background-color: white;
+    color: black;
+}

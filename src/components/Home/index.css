@@ -1,0 +1,25 @@
+.list-container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* justify-content: space-between; */
+    height: 100vh;
+    max-width: 99vw;
+}
+.page-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-header {
+  flex-shrink: 0;
+}
+
+.content-layout {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}

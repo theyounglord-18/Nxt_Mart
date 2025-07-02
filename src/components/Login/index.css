@@ -1,0 +1,46 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-form-container {
+  background-image: url('https://res.cloudinary.com/duhetizpw/image/upload/v1751000492/Screenshot_2025-06-26_095048_mf6gf2.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;           /* changed from min-height */
+  width: 100vw;            /* changed from min-width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .login-form-container {
+    background-image: url('https://res.cloudinary.com/duhetizpw/image/upload/v1751000220/Screenshot_2025-06-26_094935_moqgri.png');
+  }
+}
+#form-container{
+  background-color: white ;
+  color: grey;
+  padding-left: 80px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.error-message{
+  color: red;
+}
+.input-container{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
