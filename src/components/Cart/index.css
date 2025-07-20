@@ -13,4 +13,13 @@
     width: 100vw;
     background-color: white;
     color: black;
+    margin-top: 150px;
+
+}
+.cart-items {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: auto;
+  box-sizing: border-box;
+  /* also add appropriate responsive padding if needed */
 }

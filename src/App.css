@@ -1,0 +1,4 @@
+/* App.css or index.css */
+body, #root {
+  overflow-x: hidden;
+}

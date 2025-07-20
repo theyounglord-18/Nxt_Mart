@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import CartPage from './components/Cart'
 import NotFound from './components/NotFound'
 import PaymentPage from './components/PaymentPage'
+
 function App() {
 
   return (

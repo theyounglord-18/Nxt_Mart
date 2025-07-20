@@ -143,6 +143,7 @@ function Content() {
         <ul className="product-list">
           {productsToDisplay.map((product) => (
             <li key={product.id} className="product-item">
+      
               <img src={product.image} alt={product.name} className="img" />
               <div className="product-details">
                 <div className="info">

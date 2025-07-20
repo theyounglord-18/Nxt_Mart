@@ -81,7 +81,8 @@ function Cart() {
           <div className="cart" style={{padding: '20px', background: '#f9f9f9', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'  }}>
             <h2>Items</h2>
             {cartItems.length === 0 ? (
-            <div style={{
+            <div
+              style={{
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
@@ -117,7 +118,7 @@ function Cart() {
               <>
                 <ul style={{listStyleType: 'none', padding: '20px 60px 60px', border: '1px solid #ccc', borderRadius: '12px', width: '60vw'}}>
                   {cartItems.map(item => (
-                    <li key={item.id} style={{display: 'flex', alignItems: 'center',justifyContent:'space-around' , gap: '20px', marginBottom: '20px'}}>
+                    <li key={item.id} className='cart-items' style={{display: 'flex', alignItems: 'center',justifyContent:'space-around' , gap: '20px', marginBottom: '20px'}}>
                       <div style={{display: 'flex', alignItems: 'center', gap: '20px'}}>
                         <img src={item.image} alt={item.name} style={{ width: '100px', height: '100px' , borderRadius: '12px'}} />
                           <div>

@@ -8,6 +8,7 @@
   z-index: 1000;
   padding: 0; /* Remove extra padding, use .nav-content for spacing */
   background-color: rgb(221, 221, 219);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
 }
 
 .nav-content {
