@@ -7,11 +7,16 @@
   width: 100vw;
   background: #fff;
   text-align: center;
-  padding-top: 120px;        /* space from top */
+  padding-top: 200px;        /* space from top */
   box-sizing: border-box;
   padding-bottom: 180px;
-}
 
+}
+@media (max-width:768px){
+  #payment-container{
+    padding-top: 320px;
+  }
+}
 .payment-head {
   margin-bottom: 0.5em;
   color: black;
