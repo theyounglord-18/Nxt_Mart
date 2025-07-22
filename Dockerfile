@@ -1,23 +1,31 @@
-# Use an official Node.js image to build the React app
+# --- Stage 1: Build React App with Vite ---
 FROM node:18-alpine AS builder
 
 WORKDIR /app
 
-COPY package*.json ./
-COPY vite.config.* ./
+# Only copy package files first to cache npm install
+COPY package.json package-lock.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the app (includes vite.config.js and source code)
 COPY . .
 
-RUN npm install
+# Build the React app
 RUN npm run build
 
-# Use Nginx to serve the static build files
+# --- Stage 2: Serve with Nginx ---
 FROM nginx:stable-alpine
 
-# Remove default nginx static assets and replace with our build
+# Remove default Nginx static files
 RUN rm -rf /usr/share/nginx/html/*
+
+# Copy build output to Nginx's public directory
 COPY --from=builder /app/dist /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80
 
+# Start Nginx in foreground
 CMD ["nginx", "-g", "daemon off;"]
