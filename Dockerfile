@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm install --ignore-scripts
 
 # Copy the rest of the app (includes vite.config.js and source code)
 COPY . .
@@ -23,6 +23,8 @@ RUN rm -rf /usr/share/nginx/html/*
 
 # Copy build output to Nginx's public directory
 COPY --from=builder /app/dist /usr/share/nginx/html
+
+USER nginx
 
 # Expose port 80
 EXPOSE 80

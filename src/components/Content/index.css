@@ -110,30 +110,25 @@ body {
   to { opacity: 1; transform: none;}
 }
 .product-item {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  padding: 1rem;
-  width: fit-content;
-  height: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-style: solid;
-  border-color: grey;
-  border-width: 0.2px;
-  margin-left: 10px;
-  box-sizing: border-box;
-  justify-content: flex-start;
-  overflow: hidden;
     background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 2px 8px rgba(44,62,80,0.08);
-  transition: transform 0.2s cubic-bezier(.4,2,.6,1), box-shadow 0.2s;
-  margin: 16px;
-  animation: fadeInUp 0.6s cubic-bezier(.4,2,.6,1);
-
-}
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 1rem;
+    width: fit-content;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-color: grey;
+    border-width: 0.2px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    overflow: hidden;
+    transition: transform 0.2s cubic-bezier(.4,2,.6,1), box-shadow 0.2s;
+    margin: 16px 16px 16px 10px;
+    animation: fadeInUp 0.6s cubic-bezier(.4,2,.6,1);
+  }
 
 .product-item:hover {
   transform: scale(1.03);
