@@ -1,7 +1,13 @@
+# Ignore local development files
 node_modules
-.env
-*.log
+dist
 .git
+.vscode
+*.log
 *.pem
 *.key
-package-secret.json
+*.crt
+.env
+.DS_Store
+docker-compose.yml
+*.md
