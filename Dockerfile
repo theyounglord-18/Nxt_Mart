@@ -24,9 +24,9 @@ RUN rm -rf /usr/share/nginx/html/*
 # Copy build output to Nginx's public directory
 COPY --from=builder /app/dist /usr/share/nginx/html
 
-USER nginx
 
-# Expose port 80
+
+# Expose default Nginx port
 EXPOSE 80
 
 # Start Nginx in foreground
